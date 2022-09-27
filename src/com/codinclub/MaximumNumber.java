@@ -1,8 +1,8 @@
 package com.codinclub;
 
 public class MaximumNumber {
-    public static int findMaximumNumber(int a,int b,int c) {
-        int max = a;
+    public static float findMaximumNumber(float a, float b, float c) {
+        float max = a;
         if (b > max)
             max = b; // b is the largest
 
