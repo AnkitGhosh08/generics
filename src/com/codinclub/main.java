@@ -2,13 +2,17 @@ package com.codinclub;
 
 public class main {
     public static void main(String[] args) {
-        Integer[] integerArray = { 50, 22, 44, 89, 78, 14};
-        Double[] doublesArray = { 982.1, 234.1, 432.2, 453.1, 121.2};
-        String[] stringArray = { "apple", "peach","banana", "orange", "mango" };
+        Integer a = 318, b = 44, c = 476;
+        int maxInt = new MaximumNumber<Integer>(a, b, c).maximum();
+        System.out.println("Maximum int number is : " + maxInt);
 
-        new MaximumNumber<Integer>(integerArray).maximum();
-        new MaximumNumber<Double>(doublesArray).maximum();
-        new MaximumNumber<String>(stringArray).maximum();
+        Double a1 = 178.8, b1 = 99.0, c1 = 886.3;
+        double maxDouble = new MaximumNumber<Double>(a1, b1,c1).maximum();
+        System.out.println("Maximum double number is : " + maxDouble);
+
+        String a2 = "apple", b2 = "peach", c2 = "banana";
+        String maxString = new MaximumNumber<String>(a2, b2, c2).maximum();
+        System.out.println("Maximum string is : " + maxString);
     }
 }
 
