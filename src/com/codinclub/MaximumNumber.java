@@ -21,7 +21,10 @@ public class MaximumNumber<E extends Comparable <E>> {
             }
         }
         System.out.println("Sorted array " + Arrays.toString(array));
-        System.out.println("Maximum from the above array is " + array[array.length - 1]+"\n");
+        printMax(array);
         return array[array.length - 1];
+    }
+    public static <E> void printMax(E[] array) {
+        System.out.println("Maximum number in array is :" + array[array.length - 1]+"\n");
     }
 }
